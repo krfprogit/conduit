@@ -1,12 +1,12 @@
 {
-  "uid" : "58f3a4869c538a26",
+  "uid" : "f14048b2e57e29f4",
   "name" : "test_2",
   "fullName" : "test.test_2#test_2",
   "historyId" : "a066e6951e7c6b0adbdd03f5eb500ba7",
   "time" : {
-    "start" : 1628717065586,
-    "stop" : 1628717065586,
-    "duration" : 0
+    "start" : 1628723677578,
+    "stop" : 1628723677579,
+    "duration" : 1
   },
   "status" : "failed",
   "statusMessage" : "AssertionError: assert False",
@@ -23,10 +23,10 @@
     "value" : "test_2"
   }, {
     "name" : "host",
-    "value" : "fv-az47-289"
+    "value" : "fv-az83-116"
   }, {
     "name" : "thread",
-    "value" : "3787-MainThread"
+    "value" : "3892-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -54,6 +54,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "58f3a4869c538a26.json",
+  "source" : "f14048b2e57e29f4.json",
   "parameterValues" : [ ]
 }
