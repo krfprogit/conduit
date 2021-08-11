@@ -2,12 +2,12 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "test_2",
-    "uid" : "1322d417d71b100b",
+    "uid" : "58f3a4869c538a26",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "failed",
     "time" : {
-      "start" : 1628710947431,
-      "stop" : 1628710947431,
+      "start" : 1628717065586,
+      "stop" : 1628717065586,
       "duration" : 0
     },
     "flaky" : false,
@@ -15,12 +15,12 @@
     "parameters" : [ ]
   }, {
     "name" : "test_elso",
-    "uid" : "ba5bdf60dd2a470e",
+    "uid" : "6d9700ac941cc3d0",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1628710947444,
-      "stop" : 1628710947444,
+      "start" : 1628717065600,
+      "stop" : 1628717065600,
       "duration" : 0
     },
     "flaky" : false,
