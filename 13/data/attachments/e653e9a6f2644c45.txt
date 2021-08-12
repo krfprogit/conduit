@@ -1,0 +1,2 @@
+Test_1 OK:  Welcome! Your registration was successful!
+Username: a;Email: a@a.hu;Password: aaaAAA111;
