@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "45672ec92e99318a",
-      "reportUrl" : "https://krfprogit.github.io/conduit/6//#testresult/45672ec92e99318a",
+      "uid" : "dd7b0c099b4b3722",
+      "reportUrl" : "https://krfprogit.github.io/conduit/7//#testresult/dd7b0c099b4b3722",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert False",
       "time" : {
-        "start" : 1628772369204,
-        "stop" : 1628772369204,
+        "start" : 1628772419457,
+        "stop" : 1628772419457,
         "duration" : 0
       }
     } ]
@@ -30,12 +30,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "968db78169c39ace",
-      "reportUrl" : "https://krfprogit.github.io/conduit/6//#testresult/968db78169c39ace",
+      "uid" : "23ff6b6469914102",
+      "reportUrl" : "https://krfprogit.github.io/conduit/7//#testresult/23ff6b6469914102",
       "status" : "passed",
       "time" : {
-        "start" : 1628772369216,
-        "stop" : 1628772369216,
+        "start" : 1628772419468,
+        "stop" : 1628772419468,
         "duration" : 0
       }
     } ]

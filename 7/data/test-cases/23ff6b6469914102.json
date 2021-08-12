@@ -1,16 +1,14 @@
 {
-  "uid" : "45672ec92e99318a",
-  "name" : "test_2",
-  "fullName" : "test.test_2#test_2",
-  "historyId" : "a066e6951e7c6b0adbdd03f5eb500ba7",
+  "uid" : "23ff6b6469914102",
+  "name" : "test_elso",
+  "fullName" : "test.test_elso#test_elso",
+  "historyId" : "9187c65cb1d36febc63c96744afc5dd7",
   "time" : {
-    "start" : 1628772369204,
-    "stop" : 1628772369204,
+    "start" : 1628772419468,
+    "stop" : 1628772419468,
     "duration" : 0
   },
-  "status" : "failed",
-  "statusMessage" : "AssertionError: assert False",
-  "statusTrace" : "def test_2():\n>       assert False\nE       assert False\n\ntest/test_2.py:2: AssertionError",
+  "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
@@ -20,13 +18,13 @@
     "value" : "test"
   }, {
     "name" : "suite",
-    "value" : "test_2"
+    "value" : "test_elso"
   }, {
     "name" : "host",
-    "value" : "fv-az72-469"
+    "value" : "fv-az47-496"
   }, {
     "name" : "thread",
-    "value" : "3705-MainThread"
+    "value" : "3649-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -35,7 +33,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "test.test_2"
+    "value" : "test.test_elso"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -47,13 +45,9 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
+    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "45672ec92e99318a.json",
+  "source" : "23ff6b6469914102.json",
   "parameterValues" : [ ]
 }

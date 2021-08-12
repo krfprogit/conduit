@@ -1,19 +1,19 @@
 [ {
-  "uid" : "968db78169c39ace",
+  "uid" : "23ff6b6469914102",
   "name" : "test_elso",
   "time" : {
-    "start" : 1628772369216,
-    "stop" : 1628772369216,
+    "start" : 1628772419468,
+    "stop" : 1628772419468,
     "duration" : 0
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "45672ec92e99318a",
+  "uid" : "dd7b0c099b4b3722",
   "name" : "test_2",
   "time" : {
-    "start" : 1628772369204,
-    "stop" : 1628772369204,
+    "start" : 1628772419457,
+    "stop" : 1628772419457,
     "duration" : 0
   },
   "status" : "failed",
