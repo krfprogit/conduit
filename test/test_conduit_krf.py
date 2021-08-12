@@ -30,6 +30,10 @@ input_data = ["cim", "ez", "a", "test"]
 # Test_7_import data from file
 input_file = 'test/input_articles.csv'
 
+# Test_8_modify data
+input_data_modify = ["Old title", "en", "vmi", "tag1"]
+title = "uj cim"
+
 
 ########################################### testing
 
@@ -200,3 +204,51 @@ class TestConduit(object):
             published_title = xpath(self.browser, '//*[@class="container"]/h1')
             assert (published_title.text == input_data[i][0])
             print(f"{published_title.text}", sep=", ", end="; ")
+
+    ########################################## Test_8 modify data
+
+    def test_modify_data(self):
+        accept_cookies(self.browser)
+
+        login(self.browser, user_login)
+
+        add_new_article(self.browser, input_data_modify)
+        title_list = []
+        title_list.append(title)
+
+        WebDriverWait(self.browser, 5).until(
+            EC.visibility_of_element_located((By.XPATH, '//*[@href="#/@a/"]'))
+        ).click()
+        time.sleep(2)
+
+        old_title = WebDriverWait(self.browser, 10).until(
+            EC.visibility_of_element_located((By.XPATH, '//*[@class="preview-link"]/h1'))
+        )
+        title_list.append(old_title.text)
+        old_title.click()
+        time.sleep(2)
+
+        WebDriverWait(self.browser, 30).until(
+            EC.visibility_of_element_located((By.XPATH, '//div[@class="article-meta"]/span/a/span'))
+        ).click()
+        time.sleep(2)
+
+        new_title = WebDriverWait(self.browser, 10).until(
+            EC.visibility_of_element_located((By.XPATH, '//*[@placeholder="Article Title"]'))
+        )
+        new_title.clear()
+        new_title.send_keys(title)
+        time.sleep(2)
+
+        xpath(self.browser, '//button[@type="submit"]').click()
+        time.sleep(5)
+
+        new_post_title = WebDriverWait(self.browser, 10).until(
+            EC.visibility_of_element_located((By.XPATH, '//*[@class="container"]/h1'))
+        )
+        title_list.append(new_post_title.text)
+        time.sleep(2)
+
+        # assert(self.browser.current_url == f'http://localhost:1667/#/articles/{title_list[2]}')
+        assert (title_list[2] == title_list[0])
+        print(f"Test_8_modify_data: article title changed: {title_list[1]} -> {title_list[2]}")
