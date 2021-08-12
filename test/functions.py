@@ -24,7 +24,7 @@ def accept_cookies(browser):
     time.sleep(2)
 
 
-def conduit_login(browser, user_login):
+def login(browser, user_login):
     xpath(browser, '//*[@href="#/login"]').click()
     time.sleep(1)
     for k, v in user_login.items():

@@ -114,7 +114,7 @@ class TestConduit(object):
     def test_data_list(self):
         accept_cookies(self.browser)
 
-        conduit_login(self.browser, user_login)
+        login(self.browser, user_login)
 
         active_links = self.browser.find_elements_by_xpath('//*[@href="#/"]')
 
