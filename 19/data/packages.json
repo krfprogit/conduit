@@ -1,0 +1,87 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "test.test_conduit_krf",
+    "children" : [ {
+      "name" : "test_homepage",
+      "uid" : "5ee10b481111b67f",
+      "parentUid" : "4c04fc5315995096bb9475f097c3e192",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628803345362,
+        "stop" : 1628803347436,
+        "duration" : 2074
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_cookies",
+      "uid" : "e2016f74138e31f3",
+      "parentUid" : "4c04fc5315995096bb9475f097c3e192",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628803349047,
+        "stop" : 1628803353137,
+        "duration" : 4090
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_registration",
+      "uid" : "3a49d36e61ae21e7",
+      "parentUid" : "4c04fc5315995096bb9475f097c3e192",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628803354713,
+        "stop" : 1628803363393,
+        "duration" : 8680
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_login",
+      "uid" : "e46994ec55ca01a7",
+      "parentUid" : "4c04fc5315995096bb9475f097c3e192",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628803365983,
+        "stop" : 1628803374334,
+        "duration" : 8351
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_data_list",
+      "uid" : "c69d47be7ac07016",
+      "parentUid" : "4c04fc5315995096bb9475f097c3e192",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628803376904,
+        "stop" : 1628803382299,
+        "duration" : 5395
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_scrolling",
+      "uid" : "63196755ded65c92",
+      "parentUid" : "4c04fc5315995096bb9475f097c3e192",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628803384908,
+        "stop" : 1628803390214,
+        "duration" : 5306
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "test.test_conduit_krf"
+  } ],
+  "name" : "packages"
+}

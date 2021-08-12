@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'list' object has no attribute 'text'",
+      "children" : [ {
+        "name" : "test_scrolling",
+        "uid" : "63196755ded65c92",
+        "parentUid" : "69974bb8545686574e49c9b5d39e6356",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628803384908,
+          "stop" : 1628803390214,
+          "duration" : 5306
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "69974bb8545686574e49c9b5d39e6356"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

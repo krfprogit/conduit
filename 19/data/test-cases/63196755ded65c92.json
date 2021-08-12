@@ -1,0 +1,92 @@
+{
+  "uid" : "63196755ded65c92",
+  "name" : "test_scrolling",
+  "fullName" : "test.test_conduit_krf.TestConduit#test_scrolling",
+  "historyId" : "df2902dc10449c19e9cafa96d3164c66",
+  "time" : {
+    "start" : 1628803384908,
+    "stop" : 1628803390214,
+    "duration" : 5306
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'list' object has no attribute 'text'",
+  "statusTrace" : "self = <test_conduit_krf.TestConduit object at 0x7f391e732e80>\n\n    def test_scrolling(self):\n        accept_cookies(self.browser)\n    \n        login(self.browser, user_login)\n    \n        print(f\"Test_5_scrolling:\", end=\" \")\n        page_lists = self.browser.find_elements_by_class_name(\"page-link\")\n        p_last = []\n        for p in page_lists:\n            p.click()\n            print(p.text, sep=\", \", end=\" \")\n            p_last.clear()\n            p_last.append(p)\n    \n>       last_page = xpath(self.browser, f'//*[@class=\"page-item active\" and @data-test=\"page-link-{p_last.text}\"]')\nE       AttributeError: 'list' object has no attribute 'text'\n\ntest/test_conduit_krf.py:145: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'list' object has no attribute 'text'",
+    "statusTrace" : "self = <test_conduit_krf.TestConduit object at 0x7f391e732e80>\n\n    def test_scrolling(self):\n        accept_cookies(self.browser)\n    \n        login(self.browser, user_login)\n    \n        print(f\"Test_5_scrolling:\", end=\" \")\n        page_lists = self.browser.find_elements_by_class_name(\"page-link\")\n        p_last = []\n        for p in page_lists:\n            p.click()\n            print(p.text, sep=\", \", end=\" \")\n            p_last.clear()\n            p_last.append(p)\n    \n>       last_page = xpath(self.browser, f'//*[@class=\"page-item active\" and @data-test=\"page-link-{p_last.text}\"]')\nE       AttributeError: 'list' object has no attribute 'text'\n\ntest/test_conduit_krf.py:145: AttributeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "174e22aaecee998a",
+      "name" : "log",
+      "source" : "174e22aaecee998a.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "e270180d5800d04",
+      "name" : "stdout",
+      "source" : "e270180d5800d04.txt",
+      "type" : "text/plain",
+      "size" : 18
+    }, {
+      "uid" : "48275172179a53cb",
+      "name" : "stderr",
+      "source" : "48275172179a53cb.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_conduit_krf"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestConduit"
+  }, {
+    "name" : "host",
+    "value" : "fv-az82-699"
+  }, {
+    "name" : "thread",
+    "value" : "3701-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_conduit_krf"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "63196755ded65c92.json",
+  "parameterValues" : [ ]
+}
