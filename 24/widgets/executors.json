@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://krfprogit.github.io/conduit",
+  "buildOrder" : 24,
+  "buildName" : "GitHub Actions Run #1125782573",
+  "buildUrl" : "https://github.com/krfprogit/conduit/actions/runs/1125782573",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://krfprogit.github.io/conduit/24/"
+} ]
