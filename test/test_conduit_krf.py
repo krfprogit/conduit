@@ -46,7 +46,6 @@ class TestConduit(object):
         assert self.browser.find_element_by_xpath('//div[@class="container"]/h1').text == "conduit"
         assert self.browser.find_element_by_xpath(
             '//div[@class="container"]/p').text == "A place to share your knowledge."
-        print(f"conduit homepage:, {self.browser.current_url}")
 
     ########################################## Test_3_cookies
 
@@ -55,3 +54,36 @@ class TestConduit(object):
         time.sleep(2)
         assert (self.browser.find_elements_by_xpath('//button') == [])
         time.sleep(2)
+
+    ########################################## Test_1_registration
+
+    def test_registration(self):
+        accept_cookies(self.browser)
+
+        xpath(self.browser, '//*[@href="#/register"]').click()
+        time.sleep(2)
+
+        for k, v in user_input.items():
+            xpath(self.browser, f'//*[@placeholder="{k}"]').send_keys(v)
+        time.sleep(2)
+
+        xpath(self.browser, '//button[1]').click()
+        time.sleep(2)
+
+        text_ref_success = "Welcome!"
+        text_ref_fail = "Registration failed!"
+        welcome = WebDriverWait(self.browser, 5).until(
+            EC.visibility_of_element_located((By.CSS_SELECTOR, ".swal-title"))
+        )
+
+        assert (welcome.text == text_ref_success)
+        print("Test_1 OK: ", welcome.text, end=" ")
+        if welcome.text == text_ref_success:
+            print(self.browser.find_element_by_css_selector(".swal-text").text, sep=" ")
+        elif welcome.text == text_ref_fail:
+            print(self.browser.find_element_by_css_selector(".swal-text").text, sep=" ")
+
+        for k, v in user_input.items():
+            print(k, v, sep=": ", end=";")
+
+        xpath(self.browser, '//*[@class="swal-button swal-button--confirm"]').click()
