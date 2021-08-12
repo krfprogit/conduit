@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Aug 12 16:33:16 GMT 2021","Thu Aug 12 16:33:20 GMT 2021","4071","test","test_conduit_krf","TestConduit","","","test_cookies",""
-"passed","Thu Aug 12 16:33:12 GMT 2021","Thu Aug 12 16:33:15 GMT 2021","2121","test","test_conduit_krf","TestConduit","","","test_homepage",""
-"passed","Thu Aug 12 16:33:23 GMT 2021","Thu Aug 12 16:33:32 GMT 2021","8803","test","test_conduit_krf","TestConduit","","","test_registration",""

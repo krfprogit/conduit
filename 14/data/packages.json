@@ -1,0 +1,48 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "test.test_conduit_krf",
+    "children" : [ {
+      "name" : "test_homepage",
+      "uid" : "81ce13abd64c626",
+      "parentUid" : "4c04fc5315995096bb9475f097c3e192",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628787136387,
+        "stop" : 1628787138432,
+        "duration" : 2045
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_cookies",
+      "uid" : "f747e5737e5bd36b",
+      "parentUid" : "4c04fc5315995096bb9475f097c3e192",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628787140943,
+        "stop" : 1628787145000,
+        "duration" : 4057
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_registration",
+      "uid" : "d08a1c3e1c34d726",
+      "parentUid" : "4c04fc5315995096bb9475f097c3e192",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628787147560,
+        "stop" : 1628787155986,
+        "duration" : 8426
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "test.test_conduit_krf"
+  } ],
+  "name" : "packages"
+}
