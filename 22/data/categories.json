@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'test/input_articles.csv'",
+      "children" : [ {
+        "name" : "test_import_data_from_file",
+        "uid" : "3cad0936810b62fb",
+        "parentUid" : "cc39f5e5ff2a527810f95a0a1a170ed5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628809908283,
+          "stop" : 1628809913551,
+          "duration" : 5268
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cc39f5e5ff2a527810f95a0a1a170ed5"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
