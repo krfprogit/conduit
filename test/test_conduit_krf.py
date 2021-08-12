@@ -77,7 +77,7 @@ class TestConduit(object):
         )
 
         assert (welcome.text == text_ref_success)
-        print("Test_1 OK: ", welcome.text, end=" ")
+        print("Test_1_OK: ", welcome.text, end=" ")
         if welcome.text == text_ref_success:
             print(self.browser.find_element_by_css_selector(".swal-text").text, sep=" ")
         elif welcome.text == text_ref_fail:
@@ -87,3 +87,24 @@ class TestConduit(object):
             print(k, v, sep=": ", end=";")
 
         xpath(self.browser, '//*[@class="swal-button swal-button--confirm"]').click()
+
+        ########################################## Test_2_login
+
+        def test_login(self):
+            accept_cookies(self.browser)
+
+            xpath(self.browser, '//*[@href="#/login"]').click()
+            time.sleep(2)
+
+            for k, v in user_login.items():
+                xpath(self.browser, f'//*[@placeholder="{k}"]').send_keys(v)
+            time.sleep(2)
+
+            xpath(self.browser, '//button[1]').click()
+            time.sleep(2)
+
+            user_name = WebDriverWait(self.browser, 5).until(
+                EC.visibility_of_element_located((By.XPATH, '//*[@class="nav-link" and contains(text(),"a")]'))
+            )
+            assert user_name.text == "a"
+            print(f"Test_2_login: as {user_name.text}")
