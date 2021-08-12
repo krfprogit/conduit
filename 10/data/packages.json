@@ -4,13 +4,13 @@
     "name" : "test.test_elso",
     "children" : [ {
       "name" : "test_elso",
-      "uid" : "ff8571d110eb038e",
+      "uid" : "761f7cd1f4d53941",
       "parentUid" : "9d6316cbd60dec4b0f861df394b4408f",
       "status" : "passed",
       "time" : {
-        "start" : 1628772895590,
-        "stop" : 1628772895590,
-        "duration" : 0
+        "start" : 1628779269634,
+        "stop" : 1628779269635,
+        "duration" : 1
       },
       "flaky" : false,
       "newFailed" : false,

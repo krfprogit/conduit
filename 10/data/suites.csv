@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Aug 12 12:54:55 GMT 2021","Thu Aug 12 12:54:55 GMT 2021","0","test","test_elso","","","","test_elso",""
+"passed","Thu Aug 12 14:41:09 GMT 2021","Thu Aug 12 14:41:09 GMT 2021","1","test","test_elso","","","","test_elso",""
