@@ -136,12 +136,12 @@ class TestConduit(object):
         print(f"Test_5_scrolling:", end=" ")
         page_lists = self.browser.find_elements_by_class_name("page-link")
         p_last = []
-        for p in page_lists:
-            p.click()
-            print(p.text, sep=", ", end=" ")
-            p_last.clear()
-            p_last.append(p)
+        for page in page_lists:
+            page.click()
+            print(page.text, sep=", ", end=" ")
 
-        last_page = xpath(self.browser, f'//*[@class="page-item active" and @data-test="page-link-{p_last.text}"]')
-        assert (p_last.text == last_page.text)
-        print(f"last page text: #{last_page.text}")
+            last_page = xpath(self.browser, f'//*[@class="page-item active" and @data-test="page-link-{page.text}"]')
+            assert (page.text == last_page.text)
+            print(f"last page: #{last_page.text}")
+
+    ########################################## Test_6_add_new_article
