@@ -6,13 +6,13 @@
       "name" : "test_2",
       "children" : [ {
         "name" : "test_2",
-        "uid" : "f14048b2e57e29f4",
+        "uid" : "eb9e16f1855ed0b9",
         "parentUid" : "e8a59f393eea1446ad080f167107dac9",
         "status" : "failed",
         "time" : {
-          "start" : 1628723677578,
-          "stop" : 1628723677579,
-          "duration" : 1
+          "start" : 1628728296865,
+          "stop" : 1628728296865,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,13 +23,13 @@
       "name" : "test_elso",
       "children" : [ {
         "name" : "test_elso",
-        "uid" : "16667dda2ebcaa20",
+        "uid" : "84c5d32af8bf32b6",
         "parentUid" : "9d6316cbd60dec4b0f861df394b4408f",
         "status" : "passed",
         "time" : {
-          "start" : 1628723677591,
-          "stop" : 1628723677591,
-          "duration" : 0
+          "start" : 1628728296878,
+          "stop" : 1628728296879,
+          "duration" : 1
         },
         "flaky" : false,
         "newFailed" : false,
