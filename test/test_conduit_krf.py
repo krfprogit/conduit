@@ -25,7 +25,7 @@ user_login = {"Email": "a@a.hu",
               }
 
 # Test_6_add_new_article
-input_post = ["new", "me", "blabablabal", "key"]
+input_data = ["cim", "ez", "a", "test"]
 
 
 ########################################### testing
@@ -135,13 +135,38 @@ class TestConduit(object):
 
         print(f"Test_5_scrolling:", end=" ")
         page_lists = self.browser.find_elements_by_class_name("page-link")
-        p_last = []
         for page in page_lists:
             page.click()
             print(page.text, sep=", ", end=" ")
-
             last_page = xpath(self.browser, f'//*[@class="page-item active" and @data-test="page-link-{page.text}"]')
             assert (page.text == last_page.text)
             print(f"last page: #{last_page.text}")
 
     ########################################## Test_6_add_new_article
+
+    def test_add_new_article(self):
+        article_data = ["Article Title", "What's this article about?", "Write your article (in markdown)", "Enter tags"]
+
+        accept_cookies(self.browser)
+        login(self.browser, user_login)
+
+        xpath(self.browser, '//*[@href="#/editor"]').click()
+        time.sleep(2)
+
+        article_filling = []
+        i = 0
+        while i < len(input_data):
+            fill = xpath(self.browser, f'//*[@placeholder="{article_data[i]}"]').send_keys(input_data[i])
+            article_filling.append(fill)
+            i += 1
+            time.sleep(1)
+        time.sleep(2)
+
+        WebDriverWait(self.browser, 5).until(
+            EC.visibility_of_element_located((By.XPATH, '//button[1]'))).click()
+        time.sleep(2)
+
+        published_title = xpath(self.browser, '//*[@class="container"]/h1')
+        publish_date = self.browser.find_element_by_class_name("date")
+        assert (self.browser.current_url == f'http://localhost:1667/#/articles/{input_data[0]}')
+        print(f"Test_6_new_article published with title: \"{published_title.text}\" on {publish_date.text} at {self.browser.current_url}")
