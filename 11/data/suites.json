@@ -1,0 +1,60 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "test",
+    "children" : [ {
+      "name" : "test_conduit_krf",
+      "children" : [ {
+        "name" : "TestConduit",
+        "children" : [ {
+          "name" : "test_homepage",
+          "uid" : "3f5f0889268eec63",
+          "parentUid" : "f9f05d80ed4a66ab2b75bf2494be553d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1628780926272,
+            "stop" : 1628780928345,
+            "duration" : 2073
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_cookies",
+          "uid" : "88278a2ce992ec41",
+          "parentUid" : "f9f05d80ed4a66ab2b75bf2494be553d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1628780931032,
+            "stop" : 1628780935114,
+            "duration" : 4082
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f9f05d80ed4a66ab2b75bf2494be553d"
+      } ],
+      "uid" : "f9b83ec266f7f86038e90bddb035bee4"
+    }, {
+      "name" : "test_elso",
+      "children" : [ {
+        "name" : "test_elso",
+        "uid" : "f081c04f2fbaa217",
+        "parentUid" : "413902dae54129ced35f312a0aeace60",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628780935174,
+          "stop" : 1628780935175,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "413902dae54129ced35f312a0aeace60"
+    } ],
+    "uid" : "ff2b04dbb9c449a4d40723f51d841925"
+  } ],
+  "name" : "suites"
+}

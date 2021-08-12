@@ -1,0 +1,53 @@
+{
+  "uid" : "f081c04f2fbaa217",
+  "name" : "test_elso",
+  "fullName" : "test.test_elso#test_elso",
+  "historyId" : "9187c65cb1d36febc63c96744afc5dd7",
+  "time" : {
+    "start" : 1628780935174,
+    "stop" : 1628780935175,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_elso"
+  }, {
+    "name" : "host",
+    "value" : "fv-az83-682"
+  }, {
+    "name" : "thread",
+    "value" : "3866-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_elso"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f081c04f2fbaa217.json",
+  "parameterValues" : [ ]
+}

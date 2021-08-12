@@ -1,0 +1,31 @@
+[ {
+  "uid" : "88278a2ce992ec41",
+  "name" : "test_cookies",
+  "time" : {
+    "start" : 1628780931032,
+    "stop" : 1628780935114,
+    "duration" : 4082
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f5f0889268eec63",
+  "name" : "test_homepage",
+  "time" : {
+    "start" : 1628780926272,
+    "stop" : 1628780928345,
+    "duration" : 2073
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f081c04f2fbaa217",
+  "name" : "test_elso",
+  "time" : {
+    "start" : 1628780935174,
+    "stop" : 1628780935175,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
