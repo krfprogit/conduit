@@ -1,0 +1,26 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "test",
+    "children" : [ {
+      "name" : "test_elso",
+      "children" : [ {
+        "name" : "test_elso",
+        "uid" : "b5c92d51f40e88d6",
+        "parentUid" : "413902dae54129ced35f312a0aeace60",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628772522891,
+          "stop" : 1628772522891,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "413902dae54129ced35f312a0aeace60"
+    } ],
+    "uid" : "ff2b04dbb9c449a4d40723f51d841925"
+  } ],
+  "name" : "suites"
+}

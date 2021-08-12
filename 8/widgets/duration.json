@@ -1,0 +1,11 @@
+[ {
+  "uid" : "b5c92d51f40e88d6",
+  "name" : "test_elso",
+  "time" : {
+    "start" : 1628772522891,
+    "stop" : 1628772522891,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
