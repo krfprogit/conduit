@@ -108,3 +108,17 @@ class TestConduit(object):
         )
         assert user_name.text == "a"
         print(f"Test_2_login: as {user_name.text}")
+
+    ########################################## Test_4_data list
+
+    def test_data_list(self):
+        accept_cookies(self.browser)
+
+        conduit_login(self.browser, user_login)
+
+        active_links = self.browser.find_elements_by_xpath('//*[@href="#/"]')
+
+        assert (xpath(self.browser, '//*[@href="#/"]') == active_links[0])
+        print("Test_4_data list: active links on conduit homepage", self.browser.current_url)
+        for k in active_links:
+            print(k.text)

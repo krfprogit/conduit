@@ -22,3 +22,13 @@ def homepage(browser):
 def accept_cookies(browser):
     browser.find_element_by_xpath('//button[contains (.,"I accept!")]').click()
     time.sleep(2)
+
+
+def conduit_login(browser, user_login):
+    xpath(browser, '//*[@href="#/login"]').click()
+    time.sleep(1)
+    for k, v in user_login.items():
+        xpath(browser, f'//*[@placeholder="{k}"]').send_keys(v)
+    time.sleep(1)
+    xpath(browser, '//button[1]').click()
+    time.sleep(1)
