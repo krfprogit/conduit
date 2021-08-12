@@ -122,3 +122,20 @@ class TestConduit(object):
         print("Test_4_data list: active links on conduit homepage", self.browser.current_url)
         for k in active_links:
             print(k.text)
+
+    ########################################## Test_5_scrolling
+
+    def test_scrolling(self):
+        accept_cookies(self.browser)
+
+        login(self.browser, user_login)
+
+        print(f"Test_5_scrolling:", end=" ")
+        page_lists = self.browser.find_elements_by_class_name("page-link")
+        for p in page_lists:
+            p.click()
+            print(p.text, sep=", ", end=" ")
+
+        last_page = xpath(self.browser, f'//*[@class="page-item active" and @data-test="page-link-{p.text}"]')
+        assert (p.text == last_page.text)
+        print(f"last page text: #{last_page.text}")
