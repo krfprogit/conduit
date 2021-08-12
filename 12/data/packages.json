@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "test.test_conduit_krf",
+    "children" : [ {
+      "name" : "test_homepage",
+      "uid" : "c3c2f65b7b32d2a1",
+      "parentUid" : "4c04fc5315995096bb9475f097c3e192",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628781362445,
+        "stop" : 1628781364523,
+        "duration" : 2078
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_cookies",
+      "uid" : "47a8dc5c13857db7",
+      "parentUid" : "4c04fc5315995096bb9475f097c3e192",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628781367140,
+        "stop" : 1628781371226,
+        "duration" : 4086
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "test.test_conduit_krf"
+  } ],
+  "name" : "packages"
+}
