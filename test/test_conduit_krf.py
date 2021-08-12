@@ -88,23 +88,23 @@ class TestConduit(object):
 
         xpath(self.browser, '//*[@class="swal-button swal-button--confirm"]').click()
 
-        ########################################## Test_2_login
+    ########################################## Test_2_login
 
-        def test_login(self):
-            accept_cookies(self.browser)
+    def test_login(self):
+        accept_cookies(self.browser)
 
-            xpath(self.browser, '//*[@href="#/login"]').click()
-            time.sleep(2)
+        xpath(self.browser, '//*[@href="#/login"]').click()
+        time.sleep(2)
 
-            for k, v in user_login.items():
-                xpath(self.browser, f'//*[@placeholder="{k}"]').send_keys(v)
-            time.sleep(2)
+        for k, v in user_login.items():
+            xpath(self.browser, f'//*[@placeholder="{k}"]').send_keys(v)
+        time.sleep(2)
 
-            xpath(self.browser, '//button[1]').click()
-            time.sleep(2)
+        xpath(self.browser, '//button[1]').click()
+        time.sleep(2)
 
-            user_name = WebDriverWait(self.browser, 5).until(
-                EC.visibility_of_element_located((By.XPATH, '//*[@class="nav-link" and contains(text(),"a")]'))
-            )
-            assert user_name.text == "a"
-            print(f"Test_2_login: as {user_name.text}")
+        user_name = WebDriverWait(self.browser, 5).until(
+            EC.visibility_of_element_located((By.XPATH, '//*[@class="nav-link" and contains(text(),"a")]'))
+        )
+        assert user_name.text == "a"
+        print(f"Test_2_login: as {user_name.text}")
