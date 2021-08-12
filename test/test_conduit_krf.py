@@ -24,8 +24,11 @@ user_login = {"Email": "a@a.hu",
               "Password": "aaaAAA111"
               }
 
-# Test_6_add_new_article
+# Test_6_add new article
 input_data = ["cim", "ez", "a", "test"]
+
+# Test_7_import data from file
+input_file = 'test/input_articles.csv'
 
 
 ########################################### testing
@@ -142,7 +145,7 @@ class TestConduit(object):
             assert (page.text == last_page.text)
             print(f"last page: #{last_page.text}")
 
-    ########################################## Test_6_add_new_article
+    ########################################## Test_6_add new article
 
     def test_add_new_article(self):
         article_data = ["Article Title", "What's this article about?", "Write your article (in markdown)", "Enter tags"]
@@ -169,4 +172,31 @@ class TestConduit(object):
         published_title = xpath(self.browser, '//*[@class="container"]/h1')
         publish_date = self.browser.find_element_by_class_name("date")
         assert (self.browser.current_url == f'http://localhost:1667/#/articles/{input_data[0]}')
-        print(f"Test_6_new_article published with title: \"{published_title.text}\" on {publish_date.text} at {self.browser.current_url}")
+        print(
+            f"Test_6_new_article published with title: \"{published_title.text}\" on {publish_date.text} at {self.browser.current_url}")
+
+    ########################################## Test_7 import data from file
+
+    def test_import_data_from_file(self):
+        accept_cookies(self.browser)
+
+        login(self.browser, user_login)
+
+        with open(input_file, 'r') as data:
+            csv_reader = reader(data)
+            input_data = list(map(tuple, csv_reader))
+        print(f"Test_7: {len(input_data)} new articles published from file: {input_file}", end=" ")
+        for i in range(1, len(input_data) - 1):  # every line
+            xpath(self.browser, '//*[@href="#/editor"]').click()
+            time.sleep(2)
+            for j in range(0, len(input_data[0])):  # fill the form
+                xpath(self.browser, f'//*[@placeholder="{input_data[0][j]}"]').send_keys(input_data[i][j])
+            time.sleep(2)
+
+            WebDriverWait(self.browser, 5).until(
+                EC.visibility_of_element_located((By.XPATH, '//button[1]'))).click()
+            time.sleep(5)
+
+            published_title = xpath(self.browser, '//*[@class="container"]/h1')
+            assert (published_title.text == input_data[i][0])
+            print(f"{published_title.text}", sep=", ", end="; ")
