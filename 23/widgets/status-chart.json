@@ -1,0 +1,81 @@
+[ {
+  "uid" : "79e2da4d046f11d4",
+  "name" : "test_registration",
+  "time" : {
+    "start" : 1628810234508,
+    "stop" : 1628810243322,
+    "duration" : 8814
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4cdc2edf837ff21",
+  "name" : "test_data_list",
+  "time" : {
+    "start" : 1628810254742,
+    "stop" : 1628810260119,
+    "duration" : 5377
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "efed4b5a22373c35",
+  "name" : "test_homepage",
+  "time" : {
+    "start" : 1628810225113,
+    "stop" : 1628810227259,
+    "duration" : 2146
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2e443ddd57382e93",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1628810244876,
+    "stop" : 1628810253214,
+    "duration" : 8338
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c1701429e03ffa67",
+  "name" : "test_add_new_article",
+  "time" : {
+    "start" : 1628810268503,
+    "stop" : 1628810284447,
+    "duration" : 15944
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "248df5476104ac04",
+  "name" : "test_import_data_from_file",
+  "time" : {
+    "start" : 1628810285970,
+    "stop" : 1628810291283,
+    "duration" : 5313
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "81a2e5c81ec7a8a5",
+  "name" : "test_scrolling",
+  "time" : {
+    "start" : 1628810261638,
+    "stop" : 1628810266965,
+    "duration" : 5327
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc6a7556501a7acc",
+  "name" : "test_cookies",
+  "time" : {
+    "start" : 1628810228828,
+    "stop" : 1628810232979,
+    "duration" : 4151
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

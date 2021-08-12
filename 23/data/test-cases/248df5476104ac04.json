@@ -1,0 +1,86 @@
+{
+  "uid" : "248df5476104ac04",
+  "name" : "test_import_data_from_file",
+  "fullName" : "test.test_conduit_krf.TestConduit#test_import_data_from_file",
+  "historyId" : "a454c0efbf80287d1a7b33e43fb8bf51",
+  "time" : {
+    "start" : 1628810285970,
+    "stop" : 1628810291283,
+    "duration" : 5313
+  },
+  "status" : "broken",
+  "statusMessage" : "UnicodeDecodeError: 'utf-8' codec can't decode byte 0x85 in position 151: invalid start byte",
+  "statusTrace" : "self = <test_conduit_krf.TestConduit object at 0x7f69eec1fca0>\n\n    def test_import_data_from_file(self):\n        accept_cookies(self.browser)\n    \n        login(self.browser, user_login)\n    \n        with open(input_file, 'r') as data:\n            csv_reader = reader(data)\n>           input_data = list(map(tuple, csv_reader))\n\ntest/test_conduit_krf.py:187: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <encodings.utf_8.IncrementalDecoder object at 0x7f69eec1f280>\ninput = b\"Article Title;What's this article about?;Write your article (in markdown);Enter tags\\r\\ncim1;remek;kemeny!;tag1\\r\\ne...enyebb mint gondoltam\\x85;remek\\r\\ncimcim;RemeK;hosszu idegorlo;r1\\r\\ncimbora;ReMeK;csak ugy viszi a napokat;Remek\\r\\n\"\nfinal = False\n\n    def decode(self, input, final=False):\n        # decode input (taking the buffer into account)\n        data = self.buffer + input\n>       (result, consumed) = self._buffer_decode(data, self.errors, final)\nE       UnicodeDecodeError: 'utf-8' codec can't decode byte 0x85 in position 151: invalid start byte\n\n/usr/lib/python3.8/codecs.py:322: UnicodeDecodeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "UnicodeDecodeError: 'utf-8' codec can't decode byte 0x85 in position 151: invalid start byte",
+    "statusTrace" : "self = <test_conduit_krf.TestConduit object at 0x7f69eec1fca0>\n\n    def test_import_data_from_file(self):\n        accept_cookies(self.browser)\n    \n        login(self.browser, user_login)\n    \n        with open(input_file, 'r') as data:\n            csv_reader = reader(data)\n>           input_data = list(map(tuple, csv_reader))\n\ntest/test_conduit_krf.py:187: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <encodings.utf_8.IncrementalDecoder object at 0x7f69eec1f280>\ninput = b\"Article Title;What's this article about?;Write your article (in markdown);Enter tags\\r\\ncim1;remek;kemeny!;tag1\\r\\ne...enyebb mint gondoltam\\x85;remek\\r\\ncimcim;RemeK;hosszu idegorlo;r1\\r\\ncimbora;ReMeK;csak ugy viszi a napokat;Remek\\r\\n\"\nfinal = False\n\n    def decode(self, input, final=False):\n        # decode input (taking the buffer into account)\n        data = self.buffer + input\n>       (result, consumed) = self._buffer_decode(data, self.errors, final)\nE       UnicodeDecodeError: 'utf-8' codec can't decode byte 0x85 in position 151: invalid start byte\n\n/usr/lib/python3.8/codecs.py:322: UnicodeDecodeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "256f902f620e7cea",
+      "name" : "log",
+      "source" : "256f902f620e7cea.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "40892f93d0a1b388",
+      "name" : "stderr",
+      "source" : "40892f93d0a1b388.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_conduit_krf"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestConduit"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-548"
+  }, {
+    "name" : "thread",
+    "value" : "3797-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_conduit_krf"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "248df5476104ac04.json",
+  "parameterValues" : [ ]
+}
