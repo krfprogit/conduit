@@ -20,9 +20,9 @@ time.sleep(2)
 
 ###################################################registration
 
-user_input = {"name": "a",
-              "email": "a@a.hu",
-              "password": "aaaAAA111"
+user_input = {"name": "user69",
+              "email": "user69@gmail.hu",
+              "password": "irsai10TC"
               }
 
 browser.find_element_by_xpath('//*[@href="#/register"]').click()

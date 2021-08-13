@@ -14,11 +14,6 @@ def xpath(browser, xpath_search):
     return browser.find_element_by_xpath(xpath_search)
 
 
-# def homepage(browser):
-#     time.sleep(2)
-#     print(f"conduit homepage:", {browser.current_url})
-
-
 def accept_cookies(browser):
     browser.find_element_by_xpath('//button[contains (.,"I accept!")]').click()
     time.sleep(2)

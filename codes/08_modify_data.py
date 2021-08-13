@@ -16,25 +16,25 @@ browser.find_element_by_xpath('//*[@id="cookie-policy-panel"]/div/div[2]/button[
 browser.find_element_by_xpath('//*[@id="app"]/nav/div/ul/li[2]/a').click()
 email = browser.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset[1]/input')
 password = browser.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/fieldset[2]/input')
-email.send_keys("a@a.hu")
-password.send_keys("aaaAAA111")
+email.send_keys("user69@gmail.hu")
+password.send_keys("irsai10TC")
 time.sleep(2)
 
 browser.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/button').click()
 time.sleep(2)
 
 user_name = WebDriverWait(
-    browser, 5).until(EC.visibility_of_element_located((By.XPATH, '//*[@href="#/@a/"]'))
-                      #    EC.visibility_of_element_located((By.XPATH, '//*[@class="nav-link" and text()="a"]'))
+    browser, 5).until(EC.visibility_of_element_located((By.XPATH, '//*[@href="#/@user69/"]'))
+                      #    EC.visibility_of_element_located((By.XPATH, '//*[@class="nav-link" and text()="user69"]'))
                       )
 
-assert user_name.text == "a"
+assert user_name.text == "user69"
 print(f"login: {user_name.text}")
 time.sleep(2)
 
 # modify data
 title_list = []
-# user = browser.find_element_by_xpath('//*[@class="nav-link" and text()="a"]')
+# user = browser.find_element_by_xpath('//*[@class="nav-link" and text()="user69"]')
 user_name.click()
 time.sleep(2)
 
