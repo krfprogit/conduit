@@ -1,0 +1,11 @@
+[ {
+  "uid" : "9693dbcfb31f2b93",
+  "name" : "test__import_data_from_file",
+  "time" : {
+    "start" : 1628865221630,
+    "stop" : 1628865226930,
+    "duration" : 5300
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

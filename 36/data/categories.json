@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfa in position 91: invalid start byte",
+      "children" : [ {
+        "name" : "test__import_data_from_file",
+        "uid" : "9693dbcfb31f2b93",
+        "parentUid" : "4f5425fa8baba16ea2f557492d0c331a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628865221630,
+          "stop" : 1628865226930,
+          "duration" : 5300
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4f5425fa8baba16ea2f557492d0c331a"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

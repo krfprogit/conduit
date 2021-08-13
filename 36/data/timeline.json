@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az39-548",
+    "children" : [ {
+      "name" : "3821-MainThread",
+      "children" : [ {
+        "name" : "test__import_data_from_file",
+        "uid" : "9693dbcfb31f2b93",
+        "parentUid" : "28aa45978f72db1d0458f97697e15a7d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628865221630,
+          "stop" : 1628865226930,
+          "duration" : 5300
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "28aa45978f72db1d0458f97697e15a7d"
+    } ],
+    "uid" : "436e031f5739b7e30cef8a09aea9c2e6"
+  } ],
+  "name" : "timeline"
+}
