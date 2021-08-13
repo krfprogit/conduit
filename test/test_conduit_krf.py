@@ -90,14 +90,14 @@ class TestConduit(object):
         )
 
         assert (welcome.text == text_ref_success)
-        print("Test_1_OK: ", welcome.text, end=" ")
-        if welcome.text == text_ref_success:
-            print(self.browser.find_element_by_css_selector(".swal-text").text, sep=" ")
-        elif welcome.text == text_ref_fail:
-            print(self.browser.find_element_by_css_selector(".swal-text").text, sep=" ")
-
-        for k, v in user_input.items():
-            print(k, v, sep=": ", end=";")
+        # print("Test_1_OK: ", welcome.text, end=" ")
+        # if welcome.text == text_ref_success:
+        #     print(self.browser.find_element_by_css_selector(".swal-text").text, sep=" ")
+        # elif welcome.text == text_ref_fail:
+        #     print(self.browser.find_element_by_css_selector(".swal-text").text, sep=" ")
+        #
+        # for k, v in user_input.items():
+        #     print(k, v, sep=": ", end=";")
 
         xpath(self.browser, '//*[@class="swal-button swal-button--confirm"]').click()
 
@@ -192,6 +192,7 @@ class TestConduit(object):
         with open(input_file, 'r') as data:
             csv_reader = reader(data)
             input_data = list(map(tuple, csv_reader))
+
         print(f"Test_7: {len(input_data)} new articles published from file: {input_file}", end=" ")
         for i in range(1, len(input_data) - 1):  # every line
             xpath(self.browser, '//*[@href="#/editor"]').click()
