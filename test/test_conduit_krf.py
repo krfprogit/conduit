@@ -276,3 +276,32 @@ class TestConduit(object):
 
         assert (self.browser.current_url == 'http://localhost:1667/#/')
         print(f"Test_9_delete data: deleted url: {url_deleted}")
+
+    ########################################## Test_10 save data to file
+
+    def test_save_data_to_file(self):
+        accept_cookies(self.browser)
+
+        login(self.browser, user_login)
+
+        write_to_file = []
+        user_name = WebDriverWait(self.browser, 5).until(
+            EC.visibility_of_element_located((By.XPATH, '//*[@class="nav-link" and contains(text(),"a")]'))
+        )
+        write_to_file.append(user_name.text)
+        user_name.click()
+        time.sleep(2)
+
+        title = xpath(self.browser, '//*[@class="article-preview"]/a/h1').text
+        write_to_file.append(title)
+
+        out_file = f"test/{user_name.text}_write_out.csv"
+        with open(out_file, 'w') as out:
+            line = "\n".join(write_to_file)
+            out.write(line)
+        time.sleep(2)
+
+        with open(out_file, 'r') as file:
+            list_line = file.read().split("\n")
+        assert (list_line == write_to_file)
+        print(f"Test_10: save data to file:, {out_file}: {user_name.text}, {title}")
