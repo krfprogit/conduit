@@ -1,5 +1,0 @@
-Test_4_data list: active links on conduit homepage http://localhost:1667/#/
-conduit
-Home
-Global Feed
-conduit
