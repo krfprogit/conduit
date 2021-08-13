@@ -1,0 +1,11 @@
+A01: Regisztráció
+A02: Bejelentkezés
+A03: Cookie elfogadás 
+A04: Bejegyzések listázása (saját)
+A05: Több oldalas lista bejárása
+A06: Új adat létrehozása
+A07: Új bejegyzések létrehozása ismételten, fájlból
+A08: Bejegyzés szerkesztése
+A09: Bejegyzés törlése
+A10: Bejegyzés adatainak lementése felületről
+A11: Kijelentkezés
