@@ -59,6 +59,7 @@ class TestConduit(object):
             input_post = list(map(tuple, csv_reader))
         print(f"Test_7: {len(input_post)} new articles published from file: {input_file}", end=" ")
         for i in range(1, len(input_post) - 1):  # every line
+            time.sleep(2)
             xpath(self.browser, '//*[@href="#/editor"]').click()
             time.sleep(2)
             for j in range(0, len(input_post[0])):  # fill the form
