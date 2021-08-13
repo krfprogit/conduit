@@ -15,13 +15,13 @@ from functions import *
 
 URL = 'http://localhost:1667'
 
-user_input = {"Username": "a",
-              "Email": "a@a.hu",
-              "Password": "aaaAAA111"
+user_input = {"Username": "user69",
+              "Email": "user69@gmail.hu",
+              "Password": "irsai10TC"
               }
 
-user_login = {"Email": "a@a.hu",
-              "Password": "aaaAAA111"
+user_login = {"Email": "user69@gmail.hu",
+              "Password": "irsai10TC"
               }
 
 # Test_6_add new article
@@ -117,9 +117,9 @@ class TestConduit(object):
         time.sleep(2)
 
         user_name = WebDriverWait(self.browser, 5).until(
-            EC.visibility_of_element_located((By.XPATH, '//*[@class="nav-link" and contains(text(),"a")]'))
+            EC.visibility_of_element_located((By.XPATH, '//*[@class="nav-link" and contains(text(),"user69")]'))
         )
-        assert user_name.text == "a"
+        assert user_name.text == "user69"
         print(f"Test_2_login: as {user_name.text}")
 
     ########################################## Test_4_data list
@@ -286,7 +286,7 @@ class TestConduit(object):
 
         write_to_file = []
         user_name = WebDriverWait(self.browser, 5).until(
-            EC.visibility_of_element_located((By.XPATH, '//*[@class="nav-link" and contains(text(),"a")]'))
+            EC.visibility_of_element_located((By.XPATH, '//*[@class="nav-link" and contains(text(),"user69")]'))
         )
         write_to_file.append(user_name.text)
         user_name.click()
