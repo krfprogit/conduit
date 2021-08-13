@@ -1,0 +1,84 @@
+{
+  "uid" : "49695883dd38e681",
+  "name" : "test_scrolling",
+  "fullName" : "test.test_conduit_krf.TestConduit#test_scrolling",
+  "historyId" : "df2902dc10449c19e9cafa96d3164c66",
+  "time" : {
+    "start" : 1628812773398,
+    "stop" : 1628812778660,
+    "duration" : 5262
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d0e2a0573955935e",
+      "name" : "log",
+      "source" : "d0e2a0573955935e.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "a283ef7ebea15ed5",
+      "name" : "stdout",
+      "source" : "a283ef7ebea15ed5.txt",
+      "type" : "text/plain",
+      "size" : 18
+    }, {
+      "uid" : "1659e6bea191ade7",
+      "name" : "stderr",
+      "source" : "1659e6bea191ade7.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_conduit_krf"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestConduit"
+  }, {
+    "name" : "host",
+    "value" : "fv-az82-699"
+  }, {
+    "name" : "thread",
+    "value" : "3721-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_conduit_krf"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "49695883dd38e681.json",
+  "parameterValues" : [ ]
+}
