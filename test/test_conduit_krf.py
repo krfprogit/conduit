@@ -34,6 +34,9 @@ input_file = 'test/input_articles.csv'
 input_data_modify = ["Old title", "en", "vmi", "tag1"]
 title = "uj cim"
 
+# Test_9_delete data
+input_data_delete = ["torolni kellene", "letorolni", "ez el fog tunni", "del"]
+
 
 ########################################### testing
 
@@ -151,7 +154,7 @@ class TestConduit(object):
 
     ########################################## Test_6_add new article
 
-    def test_add_new_article(self):
+    def test_add_new_data(self):
         article_data = ["Article Title", "What's this article about?", "Write your article (in markdown)", "Enter tags"]
 
         accept_cookies(self.browser)
@@ -252,3 +255,24 @@ class TestConduit(object):
         # assert(self.browser.current_url == f'http://localhost:1667/#/articles/{title_list[2]}')
         assert (title_list[2] == title_list[0])
         print(f"Test_8_modify_data: article title changed: {title_list[1]} -> {title_list[2]}")
+
+    ########################################## Test_9 delete data
+
+    def test_delete_data(self):
+        accept_cookies(self.browser)
+
+        login(self.browser, user_login)
+
+        add_new_article(self.browser, input_data_delete)
+        time.sleep(2)
+
+        url_deleted = self.browser.current_url
+        WebDriverWait(self.browser, 5).until(
+            EC.visibility_of_element_located((By.XPATH, '//div[@class="article-meta"]/span/button/span'))
+        ).click()
+        time.sleep(5)
+
+        self.browser.refresh()
+
+        assert (self.browser.current_url == 'http://localhost:1667/#/')
+        print(f"Test_9_delete data: deleted url: {url_deleted}")
