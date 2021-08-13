@@ -220,7 +220,7 @@ class TestConduit(object):
         title_list.append(title)
 
         WebDriverWait(self.browser, 5).until(
-            EC.visibility_of_element_located((By.XPATH, '//*[@href="#/@a/"]'))
+            EC.visibility_of_element_located((By.XPATH, '//*[@href="#/@user69/"]'))
         ).click()
         time.sleep(2)
 
