@@ -57,6 +57,7 @@ class TestConduit(object):
     def test_homepage(self):
         time.sleep(2)
         assert self.browser.find_element_by_xpath('//div[@class="container"]/h1').text == "conduit"
+
         assert self.browser.find_element_by_xpath(
             '//div[@class="container"]/p').text == "A place to share your knowledge."
 
@@ -65,8 +66,8 @@ class TestConduit(object):
     def test_cookies(self):
         xpath(self.browser, '//button[contains (.,"I accept!")]').click()
         time.sleep(2)
+
         assert (self.browser.find_elements_by_xpath('//button') == [])
-        time.sleep(2)
 
     ########################################## Test_1_registration
 
@@ -78,7 +79,6 @@ class TestConduit(object):
 
         for k, v in user_input.items():
             xpath(self.browser, f'//*[@placeholder="{k}"]').send_keys(v)
-        time.sleep(2)
 
         xpath(self.browser, '//button[1]').click()
         time.sleep(2)
@@ -90,14 +90,6 @@ class TestConduit(object):
         )
 
         assert (welcome.text == text_ref_success)
-        # print("Test_1_OK: ", welcome.text, end=" ")
-        # if welcome.text == text_ref_success:
-        #     print(self.browser.find_element_by_css_selector(".swal-text").text, sep=" ")
-        # elif welcome.text == text_ref_fail:
-        #     print(self.browser.find_element_by_css_selector(".swal-text").text, sep=" ")
-        #
-        # for k, v in user_input.items():
-        #     print(k, v, sep=": ", end=";")
 
         xpath(self.browser, '//*[@class="swal-button swal-button--confirm"]').click()
 
@@ -111,7 +103,6 @@ class TestConduit(object):
 
         for k, v in user_login.items():
             xpath(self.browser, f'//*[@placeholder="{k}"]').send_keys(v)
-        time.sleep(2)
 
         xpath(self.browser, '//button[1]').click()
         time.sleep(2)
@@ -164,7 +155,6 @@ class TestConduit(object):
             article_filling.append(fill)
             i += 1
             time.sleep(1)
-        time.sleep(2)
 
         WebDriverWait(self.browser, 5).until(
             EC.visibility_of_element_located((By.XPATH, '//button[1]'))).click()
@@ -234,7 +224,6 @@ class TestConduit(object):
         )
         new_title.clear()
         new_title.send_keys(title)
-        time.sleep(2)
 
         xpath(self.browser, '//button[@type="submit"]').click()
         time.sleep(5)
@@ -243,7 +232,6 @@ class TestConduit(object):
             EC.visibility_of_element_located((By.XPATH, '//*[@class="container"]/h1'))
         )
         title_list.append(new_post_title.text)
-        time.sleep(2)
 
         assert (title_list[2] != title_list[0])
 

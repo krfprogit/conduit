@@ -14,9 +14,9 @@ def xpath(browser, xpath_search):
     return browser.find_element_by_xpath(xpath_search)
 
 
-def homepage(browser):
-    time.sleep(2)
-    print(f"conduit homepage:", {browser.current_url})
+# def homepage(browser):
+#     time.sleep(2)
+#     print(f"conduit homepage:", {browser.current_url})
 
 
 def accept_cookies(browser):
@@ -27,6 +27,7 @@ def accept_cookies(browser):
 def login(browser, user_login):
     xpath(browser, '//*[@href="#/login"]').click()
     time.sleep(1)
+
     for k, v in user_login.items():
         xpath(browser, f'//*[@placeholder="{k}"]').send_keys(v)
     time.sleep(1)
