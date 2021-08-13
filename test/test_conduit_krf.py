@@ -38,6 +38,13 @@ title = "uj cim"
 input_data_delete = ["torolni kellene", "letorolni", "ez el fog tunni", "del"]
 
 
+def conduit_webdriverwait(browser, value):
+    element = WebDriverWait(browser, 5).until(
+        EC.visibility_of_element_located((By.XPATH, value))
+    )
+    return element
+
+
 ########################################### testing
 
 class TestConduit(object):
@@ -198,6 +205,7 @@ class TestConduit(object):
             time.sleep(2)
             for j in range(0, len(input_data[0])):  # fill the form
                 xpath(self.browser, f'//*[@placeholder="{input_data[0][j]}"]').send_keys(input_data[i][j])
+                time.sleep(3)
             time.sleep(2)
 
             WebDriverWait(self.browser, 5).until(
