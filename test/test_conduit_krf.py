@@ -253,7 +253,7 @@ class TestConduit(object):
         time.sleep(2)
 
         # assert(self.browser.current_url == f'http://localhost:1667/#/articles/{title_list[2]}')
-        assert (title_list[2] == title_list[0])
+        assert (title_list[2] != title_list[0])
         print(f"Test_8_modify_data: article title changed: {title_list[1]} -> {title_list[2]}")
 
     ########################################## Test_9 delete data
