@@ -2,13 +2,13 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "test__import_data_from_file",
-    "uid" : "db58cda116bc5bb1",
+    "uid" : "281f02282b307882",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1628866059016,
-      "stop" : 1628866064449,
-      "duration" : 5433
+      "start" : 1628866808725,
+      "stop" : 1628866816383,
+      "duration" : 7658
     },
     "flaky" : false,
     "newFailed" : false,
