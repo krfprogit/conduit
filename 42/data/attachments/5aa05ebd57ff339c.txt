@@ -1,0 +1,1 @@
+Test_9_delete data: deleted url: http://localhost:1667/#/articles/torolni-kellene
