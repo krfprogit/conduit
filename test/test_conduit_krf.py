@@ -28,7 +28,7 @@ user_login = {"Email": "a@a.hu",
 input_data = ["cim", "ez", "a", "test"]
 
 # Test_7_import data from file
-input_file = 'test/input_articles.csv'
+input_file = 'test/input_article.csv'
 
 # Test_8_modify data
 input_data_modify = ["Old title", "en", "vmi", "tag1"]
