@@ -4,13 +4,13 @@
     "name" : "test.test_tc7_probe",
     "children" : [ {
       "name" : "test__import_data_from_file",
-      "uid" : "9693dbcfb31f2b93",
+      "uid" : "db58cda116bc5bb1",
       "parentUid" : "678fc1d3bb26e45efac87588393499ef",
       "status" : "broken",
       "time" : {
-        "start" : 1628865221630,
-        "stop" : 1628865226930,
-        "duration" : 5300
+        "start" : 1628866059016,
+        "stop" : 1628866064449,
+        "duration" : 5433
       },
       "flaky" : false,
       "newFailed" : false,
