@@ -1,2 +1,0 @@
-Test_1_OK:  Welcome! Your registration was successful!
-Username: user69;Email: user69@gmail.hu;Password: irsai10TC;
