@@ -1,0 +1,101 @@
+[ {
+  "uid" : "6b1220746132c5d1",
+  "name" : "test_add_new_data",
+  "time" : {
+    "start" : 1628815515896,
+    "stop" : 1628815532027,
+    "duration" : 16131
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3397265b133b785",
+  "name" : "test_scrolling",
+  "time" : {
+    "start" : 1628815508899,
+    "stop" : 1628815514269,
+    "duration" : 5370
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ab6aa455341cd792",
+  "name" : "test_homepage",
+  "time" : {
+    "start" : 1628815466207,
+    "stop" : 1628815468341,
+    "duration" : 2134
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3506fe60e8d097bf",
+  "name" : "test_cookies",
+  "time" : {
+    "start" : 1628815471009,
+    "stop" : 1628815475112,
+    "duration" : 4103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b6c99028685884d",
+  "name" : "test_registration",
+  "time" : {
+    "start" : 1628815477749,
+    "stop" : 1628815487090,
+    "duration" : 9341
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b5e58a8fe727c0fe",
+  "name" : "test_delete_data",
+  "time" : {
+    "start" : 1628815569796,
+    "stop" : 1628815584962,
+    "duration" : 15166
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "27e49d7638556d7f",
+  "name" : "test_data_list",
+  "time" : {
+    "start" : 1628815500826,
+    "stop" : 1628815506253,
+    "duration" : 5427
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bf35c42e1aff6b7",
+  "name" : "test_modify_data",
+  "time" : {
+    "start" : 1628815543787,
+    "stop" : 1628815567134,
+    "duration" : 23347
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e23058bed1342005",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1628815489742,
+    "stop" : 1628815498133,
+    "duration" : 8391
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed8ccbca3c481c15",
+  "name" : "test_import_data_from_file",
+  "time" : {
+    "start" : 1628815534660,
+    "stop" : 1628815542055,
+    "duration" : 7395
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
