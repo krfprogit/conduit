@@ -1,0 +1,2 @@
+Logout button text:  Log out
+Test_11: Logout, Back to HomePage: Sign in
