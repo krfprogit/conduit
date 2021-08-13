@@ -1,0 +1,121 @@
+[ {
+  "uid" : "94b980160d996686",
+  "name" : "test_add_new_data",
+  "time" : {
+    "start" : 1628872339799,
+    "stop" : 1628872355517,
+    "duration" : 15718
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e856ec8dcde48680",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1628872419662,
+    "stop" : 1628872427061,
+    "duration" : 7399
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b810e48d09054c8",
+  "name" : "test_save_data_to_file",
+  "time" : {
+    "start" : 1628872408797,
+    "stop" : 1628872418169,
+    "duration" : 9372
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8727ddb335ffc11b",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1628872313418,
+    "stop" : 1628872321721,
+    "duration" : 8303
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f2f958711a5b014",
+  "name" : "test_registration",
+  "time" : {
+    "start" : 1628872303342,
+    "stop" : 1628872311907,
+    "duration" : 8565
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e6e0faf77a681dc9",
+  "name" : "test_homepage",
+  "time" : {
+    "start" : 1628872292200,
+    "stop" : 1628872294319,
+    "duration" : 2119
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "99af1d03f58e97a6",
+  "name" : "test_data_list",
+  "time" : {
+    "start" : 1628872324216,
+    "stop" : 1628872329538,
+    "duration" : 5322
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8488db0ec3d881a5",
+  "name" : "test_modify_data",
+  "time" : {
+    "start" : 1628872365878,
+    "stop" : 1628872388909,
+    "duration" : 23031
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85c27f795e640b2d",
+  "name" : "test_delete_data",
+  "time" : {
+    "start" : 1628872391415,
+    "stop" : 1628872406285,
+    "duration" : 14870
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d6472af67494f770",
+  "name" : "test_import_data_from_file",
+  "time" : {
+    "start" : 1628872357002,
+    "stop" : 1628872364322,
+    "duration" : 7320
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "bc7805ac4f935b1f",
+  "name" : "test_scrolling",
+  "time" : {
+    "start" : 1628872332041,
+    "stop" : 1628872337309,
+    "duration" : 5268
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9356bd37f34ff68",
+  "name" : "test_cookies",
+  "time" : {
+    "start" : 1628872296791,
+    "stop" : 1628872300863,
+    "duration" : 4072
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
