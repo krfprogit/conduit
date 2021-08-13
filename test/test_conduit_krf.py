@@ -305,3 +305,22 @@ class TestConduit(object):
             list_line = file.read().split("\n")
         assert (list_line == write_to_file)
         print(f"Test_10: save data to file:, {out_file}: {user_name.text}, {title}")
+
+    ########################################## Test_11 logout
+
+    def test_logout(self):
+        accept_cookies(self.browser)
+
+        login(self.browser, user_login)
+
+        logout_button = xpath(self.browser, '//*[@class="nav-link" and contains(text(),"Log out")]')
+        assert (logout_button.text == ' Log out')
+
+        print("Logout button text:", logout_button.text)
+        logout_button.click()
+        time.sleep(2)
+
+        sign_in_button = xpath(self.browser, '//*[@href="#/login"]')
+        assert (sign_in_button.text == 'Sign in')
+
+        print("Test_11: Logout, Back to HomePage:", sign_in_button.text)
