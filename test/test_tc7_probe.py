@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from conduit_functions import *
+from functions import *
 
 # # # # # # # # # # # # # # # # # # # # # # # # Defining variables # # # # # # # # # # # # # # # # # # # # # # # #
 
@@ -27,7 +27,7 @@ user_login = {"Email": "user2@hotmail.com",
 # Test_6 new post
 input_post = ["new", "me", "blabablabal", "key"]
 # Test_7 import data from file
-input_file = 'test/input_articles.csv'
+input_file = 'test/input_article.csv'
 # Test_8 modify data
 input_post_modify = ["Old title", "én", "lorem ipsum újra meg újra", "kulcs"]
 title = "Módositom a cimet"
@@ -53,7 +53,7 @@ class TestConduit(object):
 
     def test__import_data_from_file(self):
         accept_cookies(self.browser)
-        conduit_login(self.browser, user_login)
+        login(self.browser, user_login)
         with open(input_file, 'r') as data:
             csv_reader = reader(data)
             input_post = list(map(tuple, csv_reader))
