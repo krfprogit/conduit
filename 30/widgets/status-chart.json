@@ -1,0 +1,121 @@
+[ {
+  "uid" : "47368ef055d7303a",
+  "name" : "test_homepage",
+  "time" : {
+    "start" : 1628846837770,
+    "stop" : 1628846839875,
+    "duration" : 2105
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d6cf925109907f8",
+  "name" : "test_delete_data",
+  "time" : {
+    "start" : 1628846936081,
+    "stop" : 1628846950940,
+    "duration" : 14859
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f1306a07bebc079",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1628846965312,
+    "stop" : 1628846972698,
+    "duration" : 7386
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c031e2ec69a214e1",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1628846859055,
+    "stop" : 1628846867360,
+    "duration" : 8305
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2398892f267be383",
+  "name" : "test_add_new_data",
+  "time" : {
+    "start" : 1628846883412,
+    "stop" : 1628846899188,
+    "duration" : 15776
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf3949f38e458456",
+  "name" : "test_registration",
+  "time" : {
+    "start" : 1628846847935,
+    "stop" : 1628846856562,
+    "duration" : 8627
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff6872ae185fc46c",
+  "name" : "test_scrolling",
+  "time" : {
+    "start" : 1628846876650,
+    "stop" : 1628846881918,
+    "duration" : 5268
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "686c45bcc7dec693",
+  "name" : "test_modify_data",
+  "time" : {
+    "start" : 1628846911535,
+    "stop" : 1628846934581,
+    "duration" : 23046
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bbcdbfae399aef8c",
+  "name" : "test_data_list",
+  "time" : {
+    "start" : 1628846869842,
+    "stop" : 1628846875166,
+    "duration" : 5324
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75e83abd51cbe6b1",
+  "name" : "test_import_data_from_file",
+  "time" : {
+    "start" : 1628846901663,
+    "stop" : 1628846908982,
+    "duration" : 7319
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "bb649e3d6576fa88",
+  "name" : "test_save_data_to_file",
+  "time" : {
+    "start" : 1628846953449,
+    "stop" : 1628846962811,
+    "duration" : 9362
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc06aa388db0118a",
+  "name" : "test_cookies",
+  "time" : {
+    "start" : 1628846842335,
+    "stop" : 1628846846409,
+    "duration" : 4074
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
